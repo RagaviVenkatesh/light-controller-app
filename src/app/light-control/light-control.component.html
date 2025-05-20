@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>{{ switchLabel }}</h2>
+
+    <input [(ngModel)]="switchLabel" placeholder="Enter switch label" />
+
+    <br />
+
+    <img [src]="'assets/bulb-' + (isOn ? 'on' : 'off') + '.png'" width="150" />
+
+    <br />
+
+    <button (click)="toggleLight()">
+        {{ isOn ? 'Turn Off' : 'Turn On' }}
+    </button>
+</div>
